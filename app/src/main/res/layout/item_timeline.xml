@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tx_dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Random"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        />
+    <com.vipul.hp_hp.timelineview.TimelineView
+        android:id="@+id/time_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:marker_size="15dp"
+        app:line_size="4dp"
+        app:line="@color/colorPrimary"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<ImageView
+    android:id="@+id/icon"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 secs"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
